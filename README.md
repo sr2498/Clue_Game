@@ -1,4 +1,4 @@
-# Digital Clue Game - Part 2 (with AI Player)
+# Digital Clue Game (with AI Player)
 
 ## Objective 
 This project is a Python-based version of Clue where players try to deduce **who committed the murder, with which weapon, and in which room**. The game supports:
