@@ -16,7 +16,7 @@ This project is a Python-based version of Clue Game where players try to deduce 
 - **Interactive gameplay:** Human players roll dice, move, suggest, and accuse via terminal  
 - **Visual board:** ASCII representation of rooms, hallways, characters, and weapons 
 
-## How to Run
+## How to Run the code
 1. Make sure you have Python 3 installed.
 2. Open a terminal in the `SandhyaRani_Project2_SourceCode` folder.
 3. Run the game: python main.py
