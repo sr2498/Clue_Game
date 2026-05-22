@@ -42,7 +42,7 @@ def display_board(characters, weapon_positions):
 
     # Header
     print("\n" + "=" * (len(ascii_board[0]) * (cell_width + 3)))
-    print(" " * 30 + "🏠  Mansion Layout (Game Board)  🏠")
+    print(" " * 30 + "🏠   Mansion Layout (Game Board)   🏠")
     print("=" * (len(ascii_board[0]) * (cell_width + 3)))
 
     # Loop through each row of the ASCII board
