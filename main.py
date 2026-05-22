@@ -28,7 +28,7 @@ ai.init_kb(
 )
 
 # ---------------------------
-# HELPER FUNCTIONS
+# HELPER FUNCTIONS 
 # ---------------------------
 
 def get_choice(prompt, options):
@@ -74,7 +74,7 @@ def referrer_display(refuter, suggester):
     return f"{refuter} refuted the suggestion (private card shown to suggester)."
 
 # ---------------------------
-# MAIN GAME LOOP
+# MAIN GAME LOOP 
 # ---------------------------
 
 def main_loop():
@@ -198,7 +198,7 @@ def main_loop():
                     characters[player]["eliminated"] = True
 
 # ---------------------------
-# GAME ENTRY POINT
+# GAME ENTRY POINT 
 # ---------------------------
 
 if __name__ == "__main__":
