@@ -58,8 +58,8 @@ def make_suggestion(suggester, room, suggested_character, suggested_weapon):
     return (None, None, checked_players)
 
 def reveal_solution():
-    print("\n===============  🔐 MURDER SOLUTION 🔐  ================")
+    print("\n=================  🔐 MURDER SOLUTION 🔐  ==================")
     print(f"👤 Suspect : {murder_solution['character']}")
     print(f"🔪 Weapon  : {murder_solution['weapon']}")
     print(f"🏠 Room    : {murder_solution['room']}")
-    print("==========================================================\n")
+    print("==============================================================\n")
