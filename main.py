@@ -6,9 +6,9 @@ from game_logic import roll_dice, make_suggestion, murder_solution, reveal_solut
 from ai_player import AIPlayer
 from knowledge_base import KnowledgeBase
 
-# --------------------------
+# ----------------------------
 # GAME INITIALIZATION
-# --------------------------
+# ----------------------------
 
 # List of all players in the Clue Game
 player_names = ["Miss Scarlett", "Colonel Mustard", "Mrs. White",
@@ -27,9 +27,9 @@ ai.init_kb(
     my_cards=characters[ai_name]["cards"]   # Cards assigned to the AI
 )
 
-# -------------------------
+# ----------------------------
 # HELPER FUNCTIONS
-# -------------------------
+# ----------------------------
 
 def get_choice(prompt, options):
     print(f"{prompt} (options: {', '.join(options)})")
@@ -73,9 +73,9 @@ def referrer_display(refuter, suggester):
         return ""
     return f"{refuter} refuted the suggestion (private card shown to suggester)."
 
-# ----------------------
+# ------------------------
 # MAIN GAME LOOP 
-# ----------------------
+# ------------------------
 
 def main_loop():
     print("Welcome to Clue Game with AI Player")
