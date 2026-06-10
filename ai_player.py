@@ -64,9 +64,9 @@ class AIPlayer:
         # Room is always the one AI stands in
         return (chosen_char, chosen_weapon, pos)
 
-    # ---------------------------
+    # ----------------------------
     # KNOWLEDGE UPDATES
-    # ---------------------------
+    # ----------------------------
     def process_seen_card(self, from_player, card):
         self.kb.mark_seen(from_player, card)
 
@@ -76,9 +76,9 @@ class AIPlayer:
     def process_no_refute(self, suggester, players_checked, suggestion_triplet):
         self.kb.note_no_refutation(suggester, players_checked, suggestion_triplet)
 
-    # -------------------------
+    # ---------------------------
     # ACCUSATION LOGIC
-    # -------------------------
+    # ---------------------------
     def consider_accusation(self):
         return self.kb.single_solution_candidate()
 
