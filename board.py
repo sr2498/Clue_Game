@@ -6,15 +6,15 @@ hallways = ["Hallway1", "Hallway2", "Hallway3"]
 
 # The graph structure represents which areas connect to each other.
 board_graph = {
-    "Study": ["Hallway1", "Kitchen"],               # Secret passage
-    "Hallway1": ["Study", "Library"],               # Secret passage
+    "Study": ["Hallway1", "Kitchen"],            # Secret passage
+    "Hallway1": ["Study", "Library"],            # Secret passage
     "Library": ["Hallway1", "Hallway2", "Billiard Room"],
     "Billiard Room": ["Library", "Hallway3"],
     "Hallway2": ["Library", "Conservatory"],
     "Conservatory": ["Hallway2", "Lounge"],
     "Lounge": ["Hallway3", "Conservatory"],
     "Hallway3": ["Billiard Room", "Lounge", "Kitchen"],
-    "Kitchen": ["Hallway3", "Study"]                # Secret passage
+    "Kitchen": ["Hallway3", "Study"]              # Secret passage
 }
 
 # A visual grid version of the board used for ASCII display.
@@ -32,9 +32,9 @@ def valid_moves(pos):
     return board_graph.get(pos, [])
 
 
-# -------------------------
+# -----------------------
 # ASCII BOARD DISPLAY
-# -------------------------
+# -----------------------
 
 def display_board(characters, weapon_positions):
     cell_width = 28     
