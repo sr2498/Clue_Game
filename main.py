@@ -6,9 +6,9 @@ from game_logic import roll_dice, make_suggestion, murder_solution, reveal_solut
 from ai_player import AIPlayer
 from knowledge_base import KnowledgeBase
 
-# -------------------------
+# ------------------------
 # GAME INITIALIZATION
-# -------------------------
+# ------------------------
 
 # List of all players in the Clue Game
 player_names = ["Miss Scarlett", "Colonel Mustard", "Mrs. White",
@@ -27,9 +27,9 @@ ai.init_kb(
     my_cards=characters[ai_name]["cards"]   # Cards assigned to the AI
 )
 
-# ----------------------
+# ---------------------
 # HELPER FUNCTIONS
-# ----------------------
+# ---------------------
 
 def get_choice(prompt, options):
     print(f"{prompt} (options: {', '.join(options)})")
@@ -73,9 +73,9 @@ def referrer_display(refuter, suggester):
         return ""
     return f"{refuter} refuted the suggestion (private card shown to suggester)."
 
-# ----------------------
+# --------------------
 # MAIN GAME LOOP 
-# ----------------------
+# --------------------
 
 def main_loop():
     print("Welcome to Clue Game with AI Player")
@@ -104,9 +104,9 @@ def main_loop():
             print(f"\n--- {player}'s turn ---")
             display_board(characters, weapon_positions)
 
-            # ----------------------
+            # --------------------
             # AI PLAYER TURN
-            # ----------------------
+            # --------------------
             if player == ai_name:
 
                 # AI chooses where to move
@@ -148,9 +148,9 @@ def main_loop():
                         characters[player]["eliminated"] = True
                 continue  # End AI turn
 
-            # ------------------------
+            # -----------------------
             # HUMAN PLAYER TURN
-            # ------------------------
+            # -----------------------
 
             input("Press Enter to roll dice.")
             move_player(player)
@@ -197,9 +197,9 @@ def main_loop():
                     print(f"{player}, Wrong accusation. You are eliminated from future turns.")
                     characters[player]["eliminated"] = True
 
-# ----------------------
+# ---------------------
 # GAME ENTRY POINT 
-# ----------------------
+# ---------------------
 
 if __name__ == "__main__":
     try:
