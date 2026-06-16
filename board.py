@@ -90,3 +90,5 @@ def display_board(characters, weapon_positions):
     # Footer
     print("-" * (len(ascii_board[0]) * (cell_width + 3)))
     print("=" * (len(ascii_board[0]) * (cell_width + 3)))
+
+
