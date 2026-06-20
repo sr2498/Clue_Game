@@ -19,7 +19,7 @@ class KnowledgeBase:
         # Cards players might have (inferred from refutations)
         self.maybe_by_player = {p: set() for p in self.players}
 
-    # ---------------------------------------------------------------------
+    # -----------------------------------------------------------------------
     def mark_seen(self, player, card):
         for category in self.possible:
             self.possible[category].discard(card)
@@ -30,7 +30,7 @@ class KnowledgeBase:
         for p in self.maybe_by_player:
             self.maybe_by_player[p].discard(card)
 
-    # ------------------------------------------------------------------------
+    # ---------------------------------------------------------------------------
     def note_refutation(self, refuter, suggestion_triplet):
         for card in suggestion_triplet:
             # Skip cards we already own
@@ -41,7 +41,7 @@ class KnowledgeBase:
             if card not in self.known_by_player[refuter]:
                 self.maybe_by_player[refuter].add(card)
 
-    # -------------------------------------------------------------------------
+    # ---------------------------------------------------------------------------
     def note_no_refutation(self, suggester, players_checked, suggestion_triplet):
         # Remove the suggested cards from players who could not refute
         for p in players_checked:
@@ -63,13 +63,13 @@ class KnowledgeBase:
             if not somebody_could_have_it:
                 self.eliminate_all_except(card)
 
-    # -------------------------------------------------------------------------
+    # ---------------------------------------------------------------------------
     def eliminate_all_except(self, card):
         for category, items in self.possible.items():
             if card in items:
                 self.possible[category] = {card}
 
-    # -------------------------------------------------------------------------
+    # ---------------------------------------------------------------------------
     def single_solution_candidate(self):
         if all(len(self.possible[cat]) == 1 for cat in ["character", "weapon", "room"]):
             return (
