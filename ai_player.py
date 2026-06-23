@@ -81,5 +81,3 @@ class AIPlayer:
     # ---------------------
     def consider_accusation(self):
         return self.kb.single_solution_candidate()
-
-
