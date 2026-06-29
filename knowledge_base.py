@@ -19,7 +19,7 @@ class KnowledgeBase:
         # Cards players might have (inferred from refutations)
         self.maybe_by_player = {p: set() for p in self.players}
 
-    # -----------------------------------------------------------------------
+    # -------------------------------------------------------------------
     def mark_seen(self, player, card):
         for category in self.possible:
             self.possible[category].discard(card)
@@ -41,7 +41,7 @@ class KnowledgeBase:
             if card not in self.known_by_player[refuter]:
                 self.maybe_by_player[refuter].add(card)
 
-    # ---------------------------------------------------------------------------
+    # -----------------------------------------------------------------------------
     def note_no_refutation(self, suggester, players_checked, suggestion_triplet):
         # Remove the suggested cards from players who could not refute
         for p in players_checked:
