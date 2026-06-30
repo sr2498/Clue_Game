@@ -19,7 +19,7 @@ class KnowledgeBase:
         # Cards players might have (inferred from refutations)
         self.maybe_by_player = {p: set() for p in self.players}
 
-    # -----------------------------------------------------------------
+    # ----------------------------------------------------------------------
     def mark_seen(self, player, card):
         for category in self.possible:
             self.possible[category].discard(card)
