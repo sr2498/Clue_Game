@@ -14,9 +14,9 @@ class AIPlayer:
     def init_kb(self, all_characters, all_weapons, all_rooms, my_cards):
         self.kb = KnowledgeBase(all_characters, all_weapons, all_rooms, my_cards)
 
-    # -----------------------
+    # ---------------------
     # MOVEMENT DECISION
-    # -----------------------
+    # ---------------------
     def pick_move(self):
         pos = characters[self.name]["position"]
         moves = valid_moves(pos)
@@ -35,9 +35,9 @@ class AIPlayer:
         # Otherwise, move randomly among valid paths
         return random.choice(moves)
 
-    # -------------------------
+    # -----------------------
     # MAKING A SUGGESTION
-    # -------------------------
+    # -----------------------
     def make_suggestion(self):
         pos = characters[self.name]["position"]
 
