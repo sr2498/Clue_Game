@@ -6,9 +6,9 @@ from game_logic import roll_dice, make_suggestion, murder_solution, reveal_solut
 from ai_player import AIPlayer
 from knowledge_base import KnowledgeBase
 
-# -------------------------
+# -----------------------
 # GAME INITIALIZATION
-# -------------------------
+# -----------------------
 
 # List of all players in the Clue Game
 player_names = ["Miss Scarlett", "Colonel Mustard", "Mrs. White",
