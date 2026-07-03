@@ -24,9 +24,9 @@ ascii_board = [
     ["Kitchen", "Hallway3", "Lounge"]
 ]
 
-# -------------------
+# --------------------
 # MOVEMENT LOGIC
-# -------------------
+# --------------------
 
 def valid_moves(pos):
     return board_graph.get(pos, [])
