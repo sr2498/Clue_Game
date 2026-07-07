@@ -7,3 +7,5 @@ characters = {
     "Mrs. Peacock": {"position": "Billiard Room", "cards": [], "eliminated": False},
     "Professor Plum": {"position": "Conservatory", "cards": [], "eliminated": False}  # AI player
 }
+
+
