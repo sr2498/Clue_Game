@@ -63,13 +63,13 @@ class KnowledgeBase:
             if not somebody_could_have_it:
                 self.eliminate_all_except(card)
 
-    # ------------------------------------------------------------------
+    # --------------------------------------------------------------------
     def eliminate_all_except(self, card):
         for category, items in self.possible.items():
             if card in items:
                 self.possible[category] = {card}
 
-    # --------------------------------------------------------------------
+    # ----------------------------------------------------------------------
     def single_solution_candidate(self):
         if all(len(self.possible[cat]) == 1 for cat in ["character", "weapon", "room"]):
             return (
@@ -78,4 +78,3 @@ class KnowledgeBase:
                 next(iter(self.possible["room"]))
             )
         return None
-
