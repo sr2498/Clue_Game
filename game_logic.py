@@ -10,6 +10,7 @@ murder_solution = {
     "room": random.choice(rooms)
 }
 
+
 # Prepare deck (exclude solution cards)
 character_cards = [c for c in characters if c != murder_solution["character"]]
 weapon_cards = [w for w in weapons if w != murder_solution["weapon"]]
@@ -31,9 +32,11 @@ valid_locations = rooms + hallways
 for weapon in weapons:
     weapon_positions[weapon] = random.choice(valid_locations)
 
+
 # Dice
 def roll_dice():
     return random.randint(1, 6)
+
 
 # Suggestion
 def make_suggestion(suggester, room, suggested_character, suggested_weapon):
