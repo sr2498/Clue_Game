@@ -36,6 +36,7 @@ def valid_moves(pos):
 # ASCII BOARD DISPLAY
 # --------------------
 
+
 def display_board(characters, weapon_positions):
     cell_width = 28     
     cell_height = 3     
@@ -87,6 +88,10 @@ def display_board(characters, weapon_positions):
                 print(" " + lines[line_index] + " |", end="")
             print()
 
+    
     # Footer
     print("-" * (len(ascii_board[0]) * (cell_width + 3)))
     print("=" * (len(ascii_board[0]) * (cell_width + 3)))
+
+
+
