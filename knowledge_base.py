@@ -30,7 +30,7 @@ class KnowledgeBase:
         for p in self.maybe_by_player:
             self.maybe_by_player[p].discard(card)
 
-    # -------------------------------------------------------------------
+    # -------------------------------------------------------------------------------
     def note_refutation(self, refuter, suggestion_triplet):
         for card in suggestion_triplet:
             # Skip cards we already own
