@@ -1,4 +1,5 @@
 # Six characters with starting positions and empty hands
+
 characters = {
     "Miss Scarlett": {"position": "Lounge", "cards": [], "eliminated": False},
     "Colonel Mustard": {"position": "Kitchen", "cards": [], "eliminated": False},
