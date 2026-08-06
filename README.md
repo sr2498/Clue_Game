@@ -10,7 +10,7 @@ This project is a Python-based version of Clue Game where players try to deduce 
 - ASCII board visualization  
 
 ## Features
-- **Multiple players:** Up to six players, one AI by default  
+- **Multiple players:** Up to six players, one AI player by default  
 - **AI deduction:** Tracks card seen, refutations, and possible solutions  
 - **Randomized setup:** Murder solution and card distribution are random each game  
 - **Interactive gameplay:** Human players roll dice, move, suggest, and accuse via terminal  
