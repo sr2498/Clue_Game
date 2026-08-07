@@ -1,5 +1,6 @@
 # Six characters with starting positions and empty hands
 
+
 characters = {
     "Miss Scarlett": {"position": "Lounge", "cards": [], "eliminated": False},
     "Colonel Mustard": {"position": "Kitchen", "cards": [], "eliminated": False},
@@ -8,3 +9,6 @@ characters = {
     "Mrs. Peacock": {"position": "Billiard Room", "cards": [], "eliminated": False},
     "Professor Plum": {"position": "Conservatory", "cards": [], "eliminated": False}  # AI player
 }
+
+
+
