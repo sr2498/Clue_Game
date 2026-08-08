@@ -4,7 +4,6 @@ from board import valid_moves, rooms
 from characters import characters
 from weapons import weapons
 
-
 # Initialize AI player
 class AIPlayer:
     def __init__(self, name):
@@ -15,9 +14,9 @@ class AIPlayer:
     def init_kb(self, all_characters, all_weapons, all_rooms, my_cards):
         self.kb = KnowledgeBase(all_characters, all_weapons, all_rooms, my_cards)
 
-    # --------------------------
+    # --------------------
     # MOVEMENT DECISION
-    # --------------------------
+    # --------------------
     def pick_move(self):
         pos = characters[self.name]["position"]
         moves = valid_moves(pos)
@@ -36,9 +35,9 @@ class AIPlayer:
         # Otherwise, move randomly among valid paths
         return random.choice(moves)
 
-    # -----------------------------
-    # MAKING A SUGGESTION
-    # -----------------------------
+    # --------------------
+    # MAKE A SUGGESTION
+    # --------------------
     def make_suggestion(self):
         pos = characters[self.name]["position"]
 
@@ -65,9 +64,9 @@ class AIPlayer:
         # Room is always the one AI stands in
         return (chosen_char, chosen_weapon, pos)
 
-    # -------------------------
+    # --------------------
     # KNOWLEDGE UPDATES
-    # -------------------------
+    # --------------------
     def process_seen_card(self, from_player, card):
         self.kb.mark_seen(from_player, card)
 
@@ -77,8 +76,8 @@ class AIPlayer:
     def process_no_refute(self, suggester, players_checked, suggestion_triplet):
         self.kb.note_no_refutation(suggester, players_checked, suggestion_triplet)
 
-    # ----------------------
+    # ------------------
     # ACCUSATION LOGIC
-    # ----------------------
+    # ------------------
     def consider_accusation(self):
         return self.kb.single_solution_candidate()
