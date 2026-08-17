@@ -76,4 +76,5 @@ At the end of the game (either by correct accusation, all players eliminated, or
 
 ## Author
 Sandhya Rani
+
 New Jersey Institute of Technology (NJIT)
