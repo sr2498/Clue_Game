@@ -73,3 +73,7 @@ This project is a Python-based version of Clue Game where players try to deduce 
 
 ## Reveal Solution
 At the end of the game (either by correct accusation, all players eliminated, or game interruption), the actual murder solution is revealed to all players.
+
+## Author
+Sandhya Rani
+New Jersey Institute of Technology (NJIT)
