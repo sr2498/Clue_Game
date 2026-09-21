@@ -72,5 +72,7 @@ This project is a Python-based version of Clue Game where players try to deduce 
 - When confident, AI makes an accusation to attempt winning.
 
 ## Reveal Solution
-At the end of the game (either by correct accusation, all players eliminated, or game interruption), the actual murder solution is revealed to all players.
-
+The hidden murder solution is revealed to all players when the game ends because of:
+- A correct accusation
+- The elimination of all active players
+- A game interruption or early exit
