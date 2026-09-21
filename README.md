@@ -20,20 +20,33 @@ The game supports:
 - **Secret passages:** Allows movement between specific rooms
 - **Player elimination:** Incorrect accusations eliminate players from future turns
 
-## How to Run the code
-1. Make sure you have Python 3 installed.
-2. Open a terminal in the `SandhyaRani_Project2_SourceCode` folder.
-3. Run the game: python main.py
+## Requirements
+
+- Python 3
+
+No additional dependencies are required unless specified by the source code.
+
+## How to Run the Game
+1. Make sure Python 3 is installed.
+2. Open a terminal.
+3. Navigate to the `SandhyaRani_Project2_SourceCode` folder:
+
+   ```bash
+   cd SandhyaRani_Project2_SourceCode
+4. Run the game:
+   python main.py
+Depending on your system, you may need to use:
+python3 main.py
 
 ## Files
-- `main.py` : Main game loop handling player turns, movement, suggestions, and accusations.
-- `board.py` : Defines board layout, room adjacency, hallways, and ASCII board display.
-- `characters.py` : Defines characters and their starting positions.
-- `weapons.py` : Defines weapons and their initial positions.
-- `game_logic.py` : Handles dice rolling, card dealing, suggestions/refutations, and murder solution generation.
-- `ai_player.py` : AI player logic, including movement, suggestions, and decision-making.
-- `knowledge_base.py` : AI reasoning engine for tracking possible solutions and deducing the murder combination.
-- `README.md` : Clue Game documentation and instructions.
+- main.py — Contains the main game loop and handles player turns, movement, suggestions, and accusations
+- board.py — Defines the board layout, room adjacency, hallways, secret passages, and ASCII board display
+- characters.py — Defines the characters and their starting positions
+- weapons.py — Defines the weapons and their initial positions
+- game_logic.py — Handles dice rolling, card distribution, suggestions, refutations, and murder-solution generation
+- ai_player.py — Contains the AI player's movement, suggestions, accusations, and decision-making logic
+- knowledge_base.py — Provides the AI reasoning system used to track information and deduce the murder combination
+- README.md — Contains the project documentation and instructions
 
 ## Setup
 1. Each character is placed in their initial starting position.
