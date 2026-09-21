@@ -1,20 +1,24 @@
 # Digital Clue Game with AI Player
 
-## Objective 
-This project is a Python-based version of Clue Game where players try to deduce **who committed the murder, with which weapon, and in which room**. The game supports:
+## Objective
+This project is a Python-based version of the classic Clue game. Players attempt to deduce **who committed the murder, which weapon was used, and where the murder occurred**.
 
-- Human players (via terminal input)  
-- AI player with deductive reasoning 
-- Dice-based movement  
-- Suggestions, refutations, and accusations  
-- ASCII board visualization  
+The game supports:
+
+- Human players through terminal input
+- An AI player with deductive reasoning
+- Dice-based movement
+- Suggestions, refutations, and accusations
+- ASCII board visualization
 
 ## Features
-- **Multiple players:** Up to six players, one AI player by default  
-- **AI deduction:** Tracks card seen, refutations, and possible solutions  
-- **Randomized setup:** Murder solution and card distribution are random each game  
-- **Interactive gameplay:** Human players roll dice, move, suggest, and accuse via terminal  
-- **Visual board:** ASCII representation of rooms, hallways, characters, and weapons 
+- **Multiple players:** Supports up to six players, with one AI player included by default
+- **AI deduction:** Tracks seen cards, refutations, and possible solutions
+- **Randomized setup:** Generates a random murder solution and card distribution for every game
+- **Interactive gameplay:** Human players can roll dice, move, make suggestions, and submit accusations
+- **Visual board:** Displays rooms, hallways, characters, and weapons using ASCII graphics
+- **Secret passages:** Allows movement between specific rooms
+- **Player elimination:** Incorrect accusations eliminate players from future turns
 
 ## How to Run the code
 1. Make sure you have Python 3 installed.
@@ -32,13 +36,14 @@ This project is a Python-based version of Clue Game where players try to deduce 
 - `README.md` : Clue Game documentation and instructions.
 
 ## Setup
-1. Place each character at their initial starting position.
-2. Weapon positions are randomly initialized; their starting location does not affect gameplay.
-3. A random murder solution is generated with: 
-        - One Suspect
-        - One Room
-        - One Weapon
-4. Players try to guess this hidden combination during gameplay.
+1. Each character is placed in their initial starting position.
+2. Weapon positions are randomly initialized. Their starting positions do not affect the murder solution.
+3. A random murder solution is generated containing:
+   - One suspect
+   - One weapon
+   - One room
+4. The remaining cards are distributed among the players.
+5. Players attempt to identify the three hidden cards during the game.
 
 ## Gameplay
 1. **Turn order:** Miss Scarlett always takes the first turn. Play then continues clockwise.
