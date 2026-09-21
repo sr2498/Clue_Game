@@ -41,20 +41,31 @@ This project is a Python-based version of Clue Game where players try to deduce 
 4. Players try to guess this hidden combination during gameplay.
 
 ## Gameplay
-1. **Turn order:** Miss Scarlett always goes first.
-2. **Dice roll:** On a player’s turn, roll a dice to determine movement points.
-3. **Movement:** Move up to the number rolled. Players can stop early by typing pass.
-4. **Suggestions:** When in a room, a player may suggest a suspect and weapon.
-5. **Refutations:** The first player clockwise who can disprove the suggestion shows one card secretly to the suggesting player.
-    - If no player can disprove, the suggestion provides no new information.
-6. **Marking cards:** Players note which cards have been seen.
-7. **Next turn:** Play continues clockwise. Suggestions can only be made in rooms.
-
-**Special rules:**
-- Secret passages exist between:
-    - Lounge ↔ Conservatory
-    - Kitchen ↔ Study
-- Players cannot move diagonally or through a space occupied by another player.
+1. **Turn order:** Miss Scarlett always takes the first turn. Play then continues clockwise.
+2. **Dice roll:** At the beginning of a turn, the player rolls a die to determine how many movement points are available.
+3. **Movement:** The player may move up to the number of spaces rolled.
+- Players may stop moving early by typing pass.
+- Players cannot move diagonally.
+- Players cannot move through a space occupied by another player.
+4. **Suggestions:** A player who enters or begins a turn inside a room may make a suggestion containing:
+- One suspect
+- One weapon
+- The room the player currently occupies
+5. **Refutations:** Beginning with the next player in clockwise order, each player checks whether they can disprove the suggestion.
+- The first player who holds one or more matching cards secretly reveals one matching card to the suggesting player.
+- Only the suggesting player sees the revealed card.
+- If no player can disprove the suggestion, no card is revealed.
+6. **Recording Information:** Players can use revealed cards and refutation results to eliminate possibilities and determine the hidden murder solution.
+7. **Next turn:** After movement and any optional suggestion or accusation are complete, play continues clockwise.
+8. **Special Rules:** Secret Passages
+Secret passages connect the following rooms:
+- Lounge ↔ Conservatory
+- Kitchen ↔ Study
+9. **Movement Restrictions:**
+- Players cannot move diagonally.
+- Players cannot move through spaces occupied by other players.
+- Suggestions may only be made while inside a room.
+- Accusations may be made from any location.
 
 ## Winning Conditions
 1. Players may make an accusation when they believe they know all three hidden cards.
