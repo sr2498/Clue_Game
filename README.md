@@ -67,20 +67,35 @@ Secret passages connect the following rooms:
 - Suggestions may only be made while inside a room.
 - Accusations may be made from any location.
 
-## Winning Conditions
-1. Players may make an accusation when they believe they know all three hidden cards.
-2. Accusations can be made from any location.
-3. Correct accusation: The player wins the game.
-4. Incorrect accusation: The player is eliminated from future turns but may still show cards when refuting others’ suggestions.
+## Correct Accusation
+If all three cards match the hidden murder solution, the accusing player wins the game.
+Incorrect Accusation
+If any part of the accusation is incorrect:
+- The player is eliminated from future turns.
+- The player may still reveal cards when refuting other players' suggestions.
+If every active player is eliminated, the game ends without a winner.
+
+## Winning Conditions 
+A player may make an accusation when they believe they know the complete murder solution.
+An accusation must identify:
+- The suspect
+- The weapon
+- The room
 
 ## AI Player
-- AI uses a knowledge base to track:
-    - Cards it has seen
-    - Possible cards other players may hold
-    - Deduction of the solution
-- AI movement prefers unexplored rooms.
-- AI makes suggestions strategically to gain new information.
-- When confident, AI makes an accusation to attempt winning.
+The AI player uses a knowledge base to track:
+- Cards in its own hand
+- Cards revealed by other players
+- Suggestions and their outcomes
+- Players who could or could not refute suggestions
+- Remaining possible suspects, weapons, and rooms
+
+## The AI:
+- Prefers moving toward unexplored rooms
+- Makes strategic suggestions to collect new information
+- Updates its knowledge after every relevant action
+- Eliminates impossible cards from the potential solution
+- Makes an accusation when it has enough information to identify all three hidden cards
 
 ## Reveal Solution
 The hidden murder solution is revealed to all players when the game ends because of:
